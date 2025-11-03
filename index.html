@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随缘而行 | 自我介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 装饰元素 */
+        .cloud {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .cloud-1 {
+            width: 120px;
+            height: 40px;
+            top: 30px;
+            right: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .cloud-2 {
+            width: 80px;
+            height: 30px;
+            bottom: 40px;
+            left: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .leaf {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #a8d8b9;
+            border-radius: 0 50%;
+            transform: rotate(45deg);
+            opacity: 0.6;
+            z-index: 0;
+        }
+        
+        .leaf-1 {
+            top: 60px;
+            left: 20px;
+        }
+        
+        .leaf-2 {
+            bottom: 70px;
+            right: 30px;
+            transform: rotate(135deg);
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #e4edf5;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .avatar-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #4a6fa5;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6b8cae;
+            font-weight: 300;
+        }
+        
+        .intro-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(244, 247, 251, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+        
+        h2 {
+            color: #5a7ca8;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #c3d7eb;
+            font-weight: 400;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            padding: 15px;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.7);
+            border-left: 3px solid #a8d8b9;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            color: #5a7ca8;
+        }
+        
+        .life-philosophy {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .philosophy-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .philosophy-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .philosophy-item i {
+            font-size: 2rem;
+            color: #6b8cae;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e4edf5;
+            color: #8ca3b8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .philosophy-item {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        
+        <div class="content">
+            <header>
+                <div class="avatar-container">
+                    <!-- 请将以下src路径替换为您的实际头像路径 -->
+                    <img src="Image_1760697096590.jpg" alt="头像" class="avatar">
+                </div>
+                <h1>随缘而行</h1>
+                <p class="subtitle">顺其自然，随遇而安</p>
+            </header>
+            
+            <section class="intro-section">
+                <h2>关于我</h2>
+                <p>我是一个随缘的人，相信生命中很多事情都是注定的缘分。不强求，不执着，让一切自然发生。</p>
+                <p>在我看来，人生就像一条河流，有时平缓，有时湍急，但终究会流向它该去的地方。</p>
+                
+                <div class="quote">
+                    "有缘千里来相会，无缘对面不相逢"
+                </div>
+                
+                <p>随缘不是消极，而是懂得在合适的时候努力，在无法改变的时候放手。这种生活哲学让我更加平和、从容地面对人生的起伏。</p>
+            </section>
+            
+            <section class="intro-section">
+                <h2>生活哲学</h2>
+                <div class="life-philosophy">
+                    <div class="philosophy-item">
+                        <i>☯️</i>
+                        <h3>顺其自然</h3>
+                        <p>不强求，不抗拒，接受生活的本来面貌</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i>🌊</i>
+                        <h3>随遇而安</h3>
+                        <p>在任何环境中都能找到内心的平静</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <i>🌱</i>
+                        <h3>静待花开</h3>
+                        <p>相信一切都会在合适的时候到来</p>
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <p>感谢缘分让我们相遇于此</p>
+            </footer>
+        </div>
+    </div>
+</body>
+  </html>
